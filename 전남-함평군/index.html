@@ -50,6 +50,9 @@ details .list li:last-child{border-bottom:0}
 .nav li a:hover{border-color:var(--green)}
 .cta{position:sticky;bottom:14px;margin-top:34px;background:var(--green);color:#fff;border-radius:14px;padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;box-shadow:0 8px 22px -8px rgba(0,0,0,.35)}
 .cta a{background:#fff;color:var(--dark);text-decoration:none;font-weight:800;padding:10px 15px;border-radius:9px;white-space:nowrap}
+.stores{display:flex;gap:8px;flex-shrink:0}
+.callout{background:#FFF6DA;border:1px solid #F0DFA6;border-radius:12px;padding:12px 14px;margin:14px 0;line-height:1.6}
+@media(prefers-color-scheme:dark){.callout{background:#2A2413;border-color:#4A4028}}
 .note{color:var(--muted);font-size:12.5px;margin-top:26px;border-top:1px solid var(--line);padding-top:14px}
 .grid{list-style:none;padding:0;margin:22px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:9px}
 .grid li{background:#fff;border:1px solid var(--line);border-radius:11px}
@@ -68,10 +71,11 @@ details .list li:last-child{border-bottom:0}
   <nav class="nav"><h3>전남의 다른 지역</h3><ul><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EC%88%9C%EC%B2%9C%EC%8B%9C/">순천시</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EC%97%AC%EC%88%98%EC%8B%9C/">여수시</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EB%82%98%EC%A3%BC%EC%8B%9C/">나주시</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EB%AA%A9%ED%8F%AC%EC%8B%9C/">목포시</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EB%AC%B4%EC%95%88%EA%B5%B0/">무안군</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%ED%99%94%EC%88%9C%EA%B5%B0/">화순군</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EC%98%81%EA%B4%91%EA%B5%B0/">영광군</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EA%B3%A1%EC%84%B1%EA%B5%B0/">곡성군</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EB%8B%B4%EC%96%91%EA%B5%B0/">담양군</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EA%B5%AC%EB%A1%80%EA%B5%B0/">구례군</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%ED%95%B4%EB%82%A8%EA%B5%B0/">해남군</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EA%B4%91%EC%96%91%EC%8B%9C/">광양시</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EC%99%84%EB%8F%84%EA%B5%B0/">완도군</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EC%98%81%EC%95%94%EA%B5%B0/">영암군</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EC%9E%A5%ED%9D%A5%EA%B5%B0/">장흥군</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EA%B0%95%EC%A7%84%EA%B5%B0/">강진군</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EC%9E%A5%EC%84%B1%EA%B5%B0/">장성군</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EA%B3%A0%ED%9D%A5%EA%B5%B0/">고흥군</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EB%82%A8%EA%B5%AC/">남구</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EB%B3%B4%EC%84%B1%EA%B5%B0/">보성군</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EC%8B%A0%EC%95%88%EA%B5%B0/">신안군</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EC%A7%84%EB%8F%84%EA%B5%B0/">진도군</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EB%8F%99%EA%B5%AC/">동구</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%82%A8-%EB%B6%81%EA%B5%AC/">북구</a></li></ul><h3>이웃 지역</h3><ul><li><a href="https://seungsoos.github.io/petiquette-web/%EC%A0%84%EB%B6%81/">전북 전체</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EA%B2%BD%EB%82%A8/">경남 전체</a></li><li><a href="https://seungsoos.github.io/petiquette-web/%EA%B4%91%EC%A3%BC/">광주 전체</a></li></ul></nav>
   <div class="cta">
     <div><b>내 주변으로 바로 찾기</b><br><small>산책 기록도 함께</small></div>
-    <a href="https://apps.apple.com/kr/app/id6794570453">앱 받기</a>
+    <div class="stores"><a href="https://apps.apple.com/kr/app/id6794570453">앱 받기</a></div>
   </div>
-  <p class="note">🐾 반려동물 배설물은 지자체·시설마다 배출 방법이 달라요. 공용 쓰레기통에 버릴 수 없는 곳도 있으니
-    현장 표지를 확인하고, 원칙적으로는 가져가 종량제봉투로 배출해 주세요.<br>
+  <p class="note">🐾 반려동물 배설물은 즉시 수거하는 것이 동물보호법상 의무예요.
+    버릴 수 있는 곳은 공원·시설마다 다르니 현장 표지를 확인하고,
+    표시가 없으면 가져가서 종량제봉투로 배출해 주세요.<br>
     장소 정보는 공공데이터와 이용자 제보를 바탕으로 하며 실제와 다를 수 있어요.</p>
 </div>
 </body></html>
